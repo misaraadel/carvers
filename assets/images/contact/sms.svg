@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <g id="sms" transform="translate(-662.083 -4779)">
+    <g id="sms_bulk" data-name="sms/bulk" transform="translate(662.083 4779)">
+      <g id="vuesax_bulk_sms" data-name="vuesax/bulk/sms">
+        <g id="sms-2" data-name="sms">
+          <path id="Vector" d="M0,0H40V40H0Z" fill="none" opacity="0"/>
+          <path id="Vector-2" data-name="Vector" d="M24.99,28.309H8.33c-5,0-8.33-2.5-8.33-8.326V8.326C0,2.5,3.332,0,8.33,0H24.99c5,0,8.33,2.5,8.33,8.326V19.983C33.319,25.811,29.987,28.309,24.99,28.309Z" transform="translate(3.34 5.846)" fill="#d2ccc0" opacity="0.4"/>
+          <g id="Group" transform="translate(10.392 13.733)">
+            <path id="Vector-3" data-name="Vector" d="M9.608,7.726A6.209,6.209,0,0,1,5.7,6.406L.472,2.231A1.248,1.248,0,1,1,2.025.277L7.253,4.452a3.985,3.985,0,0,0,4.693,0L17.174.277a1.233,1.233,0,0,1,1.754.2,1.233,1.233,0,0,1-.2,1.754L13.5,6.406A6.129,6.129,0,0,1,9.608,7.726Z" transform="translate(0 0)" fill="#d2ccc0"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

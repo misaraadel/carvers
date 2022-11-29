@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <g id="phone" transform="translate(-969 -5054)">
+    <g id="mobile_bulk" data-name="mobile/bulk" transform="translate(969 5054)">
+      <g id="vuesax_bulk_mobile" data-name="vuesax/bulk/mobile">
+        <g id="mobile">
+          <path id="Vector" d="M20.4,0H6.267C1.667,0,0,1.667,0,6.35V26.983c0,4.683,1.667,6.35,6.267,6.35H20.383c4.617,0,6.283-1.667,6.283-6.35V6.35C26.667,1.667,25,0,20.4,0Z" transform="translate(6.667 3.333)" fill="#d2ccc0" opacity="0.4"/>
+          <path id="Vector-2" data-name="Vector" d="M7.917,2.5H1.25A1.259,1.259,0,0,1,0,1.25,1.259,1.259,0,0,1,1.25,0H7.917a1.259,1.259,0,0,1,1.25,1.25A1.259,1.259,0,0,1,7.917,2.5Z" transform="translate(15.417 7.917)" fill="#d2ccc0"/>
+          <path id="Vector-3" data-name="Vector" d="M5.833,2.917A2.917,2.917,0,1,1,2.917,0,2.917,2.917,0,0,1,5.833,2.917Z" transform="translate(17.083 26.333)" fill="#d2ccc0"/>
+          <path id="Vector-4" data-name="Vector" d="M0,0H40V40H0Z" fill="none" opacity="0"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

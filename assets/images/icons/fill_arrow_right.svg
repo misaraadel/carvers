@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+  <g id="fill_arrow_right" transform="translate(-746 -668)">
+    <path id="Path_11" data-name="Path 11" d="M25,0C44.4,0,50,5.6,50,25S44.4,50,25,50,0,44.4,0,25,5.6,0,25,0Z" transform="translate(746 668)" fill="#742c2b"/>
+    <g id="Group_7" data-name="Group 7" transform="translate(108 309)">
+      <g id="arrow-right_twotone" data-name="arrow-right/twotone" transform="translate(651 372)">
+        <g id="vuesax_twotone_arrow-right" data-name="vuesax/twotone/arrow-right">
+          <g id="arrow-right">
+            <path id="Vector" d="M0,15.84,6.52,9.32a1.986,1.986,0,0,0,0-2.8L0,0" transform="translate(8.91 4.08)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+            <path id="Vector-2" data-name="Vector" d="M0,0H24V24H0Z" transform="translate(24 24) rotate(180)" fill="none" opacity="0"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
