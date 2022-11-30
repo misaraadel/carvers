@@ -56,7 +56,7 @@ $(document).ready(function () {
         spaceBetween: 18,
       },
       768: {
-        slidesPerView: 1,
+        slidesPerView: 2,
         spaceBetween: 18,
       },
       1024: {
@@ -83,7 +83,7 @@ $(document).ready(function () {
         spaceBetween: 18,
       },
       768: {
-        slidesPerView: 1,
+        slidesPerView: 2,
         spaceBetween: 18,
       },
       1024: {
@@ -110,7 +110,7 @@ $(document).ready(function () {
         spaceBetween: 18,
       },
       768: {
-        slidesPerView: 1,
+        slidesPerView: 2,
         spaceBetween: 18,
       },
       1024: {
