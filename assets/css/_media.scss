@@ -4,6 +4,12 @@
       display: block !important;
     }
 
+    &.scrolled {
+      .navbar-nav {
+        top: 90px;
+      }
+    }
+
     .socail-media {
       display: none;
     }
@@ -20,9 +26,24 @@
       padding: 30px 20px 0px;
       transition: all .3s linear;
 
+      &::after {
+        content: '';
+        position: absolute;
+        width: 100px;
+        height: 120px;
+        background: url('../images/logo/logo.webp') center / contain no-repeat;
+        bottom: 50px;
+        left: 0;
+      }
+
       li {
         padding: 15px 0px;
+        margin-inline-end: 0px !important;
         border-bottom: 1px solid rgba($color: #fff, $alpha: 0.10);
+
+        &:last-child {
+          border-bottom: 0px !important;
+        }
 
         a {
           width: 100% !important;
@@ -153,6 +174,133 @@
       .techno-logo {
         margin-top: 10px;
       }
+    }
+  }
+
+  .signle-blog {
+    padding-bottom: 40px;
+
+    .image-content {
+      border-radius: 20px;
+      height: 250px !important;
+    }
+
+    .title-contain {
+      margin: 30px 0px;
+      padding: 20px 15px;
+      border-radius: 10px !important;
+
+      h1 {
+        font-size: 18px !important;
+      }
+    }
+
+    .data-contain {
+      border-radius: 10px !important;
+      padding: 25px 20px !important;
+
+      p {
+        margin-bottom: 20px !important;
+      }
+    }
+  }
+
+  .sub-header {
+    .contain h1 {
+      font-size: 18px !important;
+    }
+
+    &.large-header {
+      padding-bottom: 120px !important;
+    }
+  }
+
+  .grainte-product .box {
+    flex-direction: column !important;
+    padding: 20px 10px !important;
+    margin-bottom: 40px !important;
+
+    &:nth-child(even) {
+      flex-direction: column !important;
+      padding: 20px 10px !important;
+    }
+
+    .image-content {
+      width: 100% !important;
+      height: 250px !important;
+    }
+
+    .contain {
+      width: 100% !important;
+      padding-top: 20px !important;
+
+      .desc {
+        padding-top: 20px !important;
+        margin: 20px 0px !important;
+      }
+
+      h1 {
+        font-size: 20px !important;
+      }
+
+      h2 {
+        margin-bottom: 20px;
+        font-size: 18px !important;
+
+        span {
+          font-size: 18px !important;
+        }
+      }
+    }
+  }
+
+  .sub-header {
+    padding: 170px 0px 50px !important;
+  }
+
+  .single-product {
+    .prodcutDetailsSwiper .swiper-slide {
+      height: 250px;
+    }
+
+    .product-title {
+      margin-top: 20px;
+
+      h1 {
+        font-size: 18px;
+
+        span {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .contain {
+      width: 100% !important;
+    }
+
+    .desc {
+      margin: 20px 0px !important;
+      padding: 20px 0px !important;
+    }
+
+    h2 {
+      margin-bottom: 20px !important;
+      font-size: 18px !important;
+
+      span {
+        font-size: 18px !important;
+      }
+    }
+  }
+
+  .features .features-box::after {
+    display: none;
+  }
+
+  .about-us {
+    .about-us-image {
+      height: 300px !important;
     }
   }
 }
