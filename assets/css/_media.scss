@@ -1,3 +1,9 @@
+@media (max-width: 1200px) and (min-width: 1000px) {
+  .navbar .content .nav-contain {
+    width: calc(100% - 170px);
+  }
+}
+
 @media (max-width: 999px) {
   .navbar {
     .hamburger {
@@ -5,55 +11,47 @@
     }
 
     &.scrolled {
-      .navbar-nav {
+      .nav-contain {
         top: 90px;
       }
     }
 
-    .socail-media {
-      display: none;
-    }
-
-    .navbar-nav {
-      width: 100%;
+    .nav-contain {
+      width: 100% !important;
       position: absolute;
-      top: 109px;
-      background-color: var(--primary-color);
       height: 100vh;
+      top: 109px;
       right: -100%;
+      background-color: var(--primary-color);
       flex-direction: column !important;
-      justify-content: flex-start;
-      padding: 30px 20px 0px;
+      justify-content: flex-start !important;
+      padding: 20px 20px 0px;
       transition: all .3s linear;
 
-      &::after {
-        content: '';
-        position: absolute;
-        width: 100px;
-        height: 120px;
-        background: url('../images/logo/logo.webp') center / contain no-repeat;
-        bottom: 50px;
-        left: 0;
-      }
-
-      li {
-        padding: 15px 0px;
-        margin-inline-end: 0px !important;
-        border-bottom: 1px solid rgba($color: #fff, $alpha: 0.10);
-
-        &:last-child {
-          border-bottom: 0px !important;
-        }
-
-        a {
-          width: 100% !important;
-
-          &::after {
-            display: none;
+      .navbar-nav {
+        width: 100%;
+        flex-direction: column !important;
+        justify-content: flex-start;
+  
+        li {
+          padding: 15px 0px;
+          margin-inline-end: 0px !important;
+          border-bottom: 1px solid rgba($color: #fff, $alpha: 0.10);
+  
+          &:last-child {
+            border-bottom: 0px !important;
+          }
+  
+          a {
+            width: 100% !important;
+  
+            &::after {
+              display: none;
+            }
           }
         }
       }
-
+  
       &.active-nav {
         right: 0px !important;
       }

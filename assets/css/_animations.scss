@@ -315,6 +315,18 @@
   }
 }
 
+@keyframes translateXR {
+
+  0%,
+  100% {
+    transform: translateX(2px) scaleX(-1);
+  }
+
+  50% {
+    transform: translateX(-2px) scaleX(-1);
+  }
+}
+
 @keyframes translateY {
   0%,
   100% {

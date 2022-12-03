@@ -22,7 +22,7 @@ $(document).ready(function () {
 
   $('.hamburger').click(function(){
     $('.hamburger').toggleClass('active');
-    $('.navbar-nav').toggleClass('active-nav');
+    $('.nav-contain').toggleClass('active-nav');
     $('body').toggleClass('overflowNone')
   });
 

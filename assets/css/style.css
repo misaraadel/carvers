@@ -694,6 +694,22 @@ button[type=submit] {
     transform: translateX(-2px);
   }
 }
+@-webkit-keyframes translateXR {
+  0%, 100% {
+    transform: translateX(2px) scaleX(-1);
+  }
+  50% {
+    transform: translateX(-2px) scaleX(-1);
+  }
+}
+@keyframes translateXR {
+  0%, 100% {
+    transform: translateX(2px) scaleX(-1);
+  }
+  50% {
+    transform: translateX(-2px) scaleX(-1);
+  }
+}
 @-webkit-keyframes translateY {
   0%, 100% {
     transform: translateY(2px);
@@ -1014,6 +1030,46 @@ button[type=submit] {
   --light-filter: invert(100%) sepia(5%) saturate(16%) hue-rotate(221deg) brightness(103%) contrast(99%);
   --dark-filter: invert(0%) sepia(98%) saturate(0%) hue-rotate(28deg) brightness(98%) contrast(105%);
   --gray-filter: invert(62%) sepia(5%) saturate(14%) hue-rotate(358deg) brightness(97%) contrast(87%);
+}
+
+html[dir=ltr] .swiper-button-prev {
+  left: unset !important;
+}
+html[dir=ltr] .product-box::after {
+  transform: rotate(10deg);
+  left: 0px;
+  right: unset !important;
+}
+html[dir=ltr] .product-box:hover::after {
+  transform: rotate(0deg) !important;
+}
+html[dir=ltr] .sub-header .contain .list-data li::after,
+html[dir=ltr] .blog-box .contain .see-more img,
+html[dir=ltr] .about-us .contain.contact-now .data .show-more img,
+html[dir=ltr] .about-us .contain.contact-now .image-content img,
+html[dir=ltr] .product-box .data-apear .see-more img,
+html[dir=ltr] .custom-btn img {
+  transform: scaleX(-1);
+}
+html[dir=ltr] .blog-box .contain .see-more:hover img,
+html[dir=ltr] .about-us .contain.contact-now .data .show-more:hover img,
+html[dir=ltr] .product-box .data-apear .see-more:hover img {
+  -webkit-animation: translateXR 1s linear infinite !important;
+          animation: translateXR 1s linear infinite !important;
+}
+html[dir=ltr] .single-product .contain .about-data li::after,
+html[dir=ltr] .grainte-product .box .contain .about-data li::after,
+html[dir=ltr] .about-us .about-contain .about-data li::after {
+  right: unset !important;
+  left: 0px;
+}
+html[dir=ltr] .features .features-box::after {
+  left: unset !important;
+  right: -2px;
+}
+html[dir=ltr] .sub-header .contain .list-data li::after {
+  left: unset !important;
+  right: -10px;
 }
 
 .general-section {
@@ -1391,6 +1447,11 @@ button[type=submit] {
   -o-object-fit: contain;
      object-fit: contain;
 }
+.socail-media li a span {
+  color: var(--light-color);
+  font-size: 20px;
+  font-weight: 900;
+}
 .socail-media li a::after {
   content: "";
   position: absolute;
@@ -1401,9 +1462,13 @@ button[type=submit] {
   left: 0;
   z-index: -1;
 }
+.socail-media li a:hover span,
 .socail-media li a:hover img {
   -webkit-animation: fadeInLeft 0.3s linear;
           animation: fadeInLeft 0.3s linear;
+}
+.socail-media li a:hover span {
+  color: var(--primary-color);
 }
 
 .navbar {
@@ -1466,6 +1531,13 @@ button[type=submit] {
   height: 60px;
   -o-object-fit: contain;
      object-fit: contain;
+}
+.navbar .content .nav-contain {
+  width: calc(100% - 250px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
 }
 .navbar .content .navbar-nav {
   flex-direction: row;
@@ -2589,53 +2661,51 @@ footer .coprights .techno-logo:hover img {
   transform: scale(0.9);
 }
 
+@media (max-width: 1200px) and (min-width: 1000px) {
+  .navbar .content .nav-contain {
+    width: calc(100% - 170px);
+  }
+}
 @media (max-width: 999px) {
   .navbar .hamburger {
     display: block !important;
   }
-  .navbar.scrolled .navbar-nav {
+  .navbar.scrolled .nav-contain {
     top: 90px;
   }
-  .navbar .socail-media {
-    display: none;
-  }
-  .navbar .navbar-nav {
-    width: 100%;
+  .navbar .nav-contain {
+    width: 100% !important;
     position: absolute;
-    top: 109px;
-    background-color: var(--primary-color);
     height: 100vh;
+    top: 109px;
     right: -100%;
+    background-color: var(--primary-color);
     flex-direction: column !important;
-    justify-content: flex-start;
-    padding: 30px 20px 0px;
+    justify-content: flex-start !important;
+    padding: 20px 20px 0px;
     transition: all 0.3s linear;
   }
-  .navbar .navbar-nav::after {
-    content: "";
-    position: absolute;
-    width: 100px;
-    height: 120px;
-    background: url("../images/logo/logo.webp") center/contain no-repeat;
-    bottom: 50px;
-    left: 0;
+  .navbar .nav-contain .navbar-nav {
+    width: 100%;
+    flex-direction: column !important;
+    justify-content: flex-start;
   }
-  .navbar .navbar-nav li {
+  .navbar .nav-contain .navbar-nav li {
     padding: 15px 0px;
     -webkit-margin-end: 0px !important;
             margin-inline-end: 0px !important;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
-  .navbar .navbar-nav li:last-child {
+  .navbar .nav-contain .navbar-nav li:last-child {
     border-bottom: 0px !important;
   }
-  .navbar .navbar-nav li a {
+  .navbar .nav-contain .navbar-nav li a {
     width: 100% !important;
   }
-  .navbar .navbar-nav li a::after {
+  .navbar .nav-contain .navbar-nav li a::after {
     display: none;
   }
-  .navbar .navbar-nav.active-nav {
+  .navbar .nav-contain.active-nav {
     right: 0px !important;
   }
   header .swiper-wrapper {

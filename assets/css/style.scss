@@ -15,6 +15,58 @@
   --gray-filter: invert(62%) sepia(5%) saturate(14%) hue-rotate(358deg) brightness(97%) contrast(87%);
 }
 
+html[dir="ltr"] {
+  .swiper-button-prev {
+    left: unset !important;
+  }
+
+  .product-box {
+    &::after {
+      transform: rotate(10deg);
+      left: 0px;
+      right: unset !important;
+    }
+
+    &:hover {
+      &::after {
+        transform: rotate(0deg) !important;
+      }
+    }
+  }
+  
+  .sub-header .contain .list-data li::after,
+  .blog-box .contain .see-more img,
+  .about-us .contain.contact-now .data .show-more img,
+  .about-us .contain.contact-now .image-content img,
+  .product-box .data-apear .see-more img,
+  .custom-btn img {
+    transform: scaleX(-1);
+  }
+
+  .blog-box .contain .see-more:hover img,
+  .about-us .contain.contact-now .data .show-more:hover img,
+  .product-box .data-apear .see-more:hover img {
+    animation: translateXR 1s linear infinite !important;
+  }
+
+  .single-product .contain .about-data li::after,
+  .grainte-product .box .contain .about-data li::after,
+  .about-us .about-contain .about-data li::after {
+    right: unset !important;
+    left: 0px;
+  }
+
+  .features .features-box::after {
+    left: unset !important;
+    right: -2px;
+  }
+
+  .sub-header .contain .list-data li::after {
+    left: unset !important;
+    right: -10px;
+  }
+}
+
 .general-section {
   width: 100%;
   padding: 80px 0px 0px;
@@ -436,6 +488,12 @@
         object-fit: contain;
       }
 
+      span {
+        color: var(--light-color);
+        font-size: 20px;
+        font-weight: 900;
+      }
+
       &::after {
         content: '';
         position: absolute;
@@ -448,8 +506,13 @@
       }
 
       &:hover {
+        span,
         img {
           animation: fadeInLeft .3s linear;
+        }
+
+        span {
+          color: var(--primary-color);
         }
       }
     }
@@ -527,6 +590,14 @@
       width: 150px;
       height: 60px;
       object-fit: contain;
+    }
+
+    .nav-contain {
+      width: calc(100% - 250px);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      align-content: center;
     }
 
     .navbar-nav {
