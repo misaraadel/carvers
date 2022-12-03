@@ -58,6 +58,20 @@
     }
   }
 
+  html[dir="ltr"] {
+    .navbar {
+      .nav-contain {
+        right: unset !important;
+        left: -100%;
+
+        &.active-nav {
+          right: unset !important;
+          left: 0px !important;
+        }
+      }
+    }
+  }
+
   header .swiper-wrapper {
     padding-top: 100px;
 
@@ -304,5 +318,16 @@
 
   .signle-blog .socail-media span {
     font-size: 15px !important;
+  }
+
+  .signle-blog .share-section {
+    flex-direction: column;
+    padding: 15px 10px;
+
+    p {
+      margin-bottom: 20px !important;
+      text-align: center;
+      margin-inline-end: 0px !important;
+    }
   }
 }

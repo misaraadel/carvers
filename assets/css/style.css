@@ -1,22 +1,6 @@
-@font-face {
-  font-family: "IBMPlexSans";
-  src: url("../fonts/IBMPlexSans/IBMPlexSansArabic-Medium.woff2");
-  font-weight: 700;
-}
-@font-face {
-  font-family: "IBMPlexSans";
-  src: url("../fonts/IBMPlexSans/IBMPlexSansArabic-Regular.woff2");
-  font-weight: 500;
-}
-@font-face {
-  font-family: "IBMPlexSans";
-  src: url("../fonts/IBMPlexSans/IBMPlexSansArabic-Bold.woff2");
-  font-weight: 900;
-}
 * {
   margin: 0px;
   box-sizing: border-box;
-  font-family: "IBMPlexSans", sans-serif;
   scroll-behavior: smooth;
 }
 *::-moz-selection {
@@ -2457,32 +2441,36 @@ header .swiper-slide-active h1, header .swiper-slide-active p, header .swiper-sl
 .signle-blog .data-contain p:last-child {
   margin-bottom: 0px !important;
 }
-.signle-blog .socail-media {
+.signle-blog .share-section {
   width: 100%;
   padding: 30px 10px;
   background-color: var(--primary-color);
   border-radius: 20px;
   margin-top: 40px;
+  display: flex;
+  align-items: center;
+  align-content: center;
   justify-content: center;
 }
-.signle-blog .socail-media span {
+.signle-blog .share-section p {
   color: var(--light-color);
   font-size: 20px;
   font-weight: 700;
   -webkit-margin-end: 10px;
           margin-inline-end: 10px;
+  margin-bottom: 0px !important;
 }
-.signle-blog .socail-media a::after {
+.signle-blog .share-section .socail-media a::after {
   filter: var(--light-filter);
   opacity: 0.1;
 }
-.signle-blog .socail-media a img {
+.signle-blog .share-section .socail-media a img {
   filter: var(--light-filter);
 }
-.signle-blog .socail-media a:hover::after {
+.signle-blog .share-section .socail-media a:hover::after {
   opacity: 1;
 }
-.signle-blog .socail-media a:hover img {
+.signle-blog .share-section .socail-media a:hover img {
   filter: var(--primary-filter) !important;
 }
 
@@ -2708,6 +2696,14 @@ footer .coprights .techno-logo:hover img {
   .navbar .nav-contain.active-nav {
     right: 0px !important;
   }
+  html[dir=ltr] .navbar .nav-contain {
+    right: unset !important;
+    left: -100%;
+  }
+  html[dir=ltr] .navbar .nav-contain.active-nav {
+    right: unset !important;
+    left: 0px !important;
+  }
   header .swiper-wrapper {
     padding-top: 100px;
   }
@@ -2895,5 +2891,15 @@ footer .coprights .techno-logo:hover img {
   }
   .signle-blog .socail-media span {
     font-size: 15px !important;
+  }
+  .signle-blog .share-section {
+    flex-direction: column;
+    padding: 15px 10px;
+  }
+  .signle-blog .share-section p {
+    margin-bottom: 20px !important;
+    text-align: center;
+    -webkit-margin-end: 0px !important;
+            margin-inline-end: 0px !important;
   }
 }/*# sourceMappingURL=style.css.map */

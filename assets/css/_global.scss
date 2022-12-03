@@ -1,25 +1,7 @@
-@font-face {
-    font-family: "IBMPlexSans";
-    src: url('../fonts/IBMPlexSans/IBMPlexSansArabic-Medium.woff2');
-    font-weight: 700;
-}
-
-@font-face {
-    font-family: "IBMPlexSans";
-    src: url('../fonts/IBMPlexSans/IBMPlexSansArabic-Regular.woff2');
-    font-weight: 500;
-}
-
-@font-face {
-    font-family: "IBMPlexSans";
-    src: url('../fonts/IBMPlexSans/IBMPlexSansArabic-Bold.woff2');
-    font-weight: 900;
-}
 
 * {
     margin: 0px;
     box-sizing: border-box;
-    font-family: "IBMPlexSans" , sans-serif ;
     scroll-behavior: smooth;
 
     &::selection{
