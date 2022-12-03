@@ -385,12 +385,12 @@ button[type=submit] {
 }
 @-webkit-keyframes pulse-shadow {
   100% {
-    box-shadow: 0 0 0 10px rgba(255, 102, 0, 0), 0 0 0 20px rgba(255, 102, 0, 0);
+    box-shadow: 0 0 0 10px rgba(116, 44, 43, 0.1), 0 0 0 15px rgba(116, 44, 43, 0.1);
   }
 }
 @keyframes pulse-shadow {
   100% {
-    box-shadow: 0 0 0 10px rgba(255, 102, 0, 0), 0 0 0 20px rgba(255, 102, 0, 0);
+    box-shadow: 0 0 0 10px rgba(116, 44, 43, 0.1), 0 0 0 15px rgba(116, 44, 43, 0.1);
   }
 }
 @-webkit-keyframes spinner {
@@ -1054,6 +1054,10 @@ html[dir=ltr] .features .features-box::after {
 html[dir=ltr] .sub-header .contain .list-data li::after {
   left: unset !important;
   right: -10px;
+}
+html[dir=ltr] .fixed-icon {
+  left: unset !important;
+  right: 20px !important;
 }
 
 .general-section {
@@ -2647,6 +2651,29 @@ footer .coprights .techno-logo img {
 }
 footer .coprights .techno-logo:hover img {
   transform: scale(0.9);
+}
+
+.fixed-icon {
+  width: 50px;
+  height: 50px;
+  background: var(--primary-color);
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  border-radius: 50%;
+  z-index: 99;
+  -webkit-animation: pulse-shadow 2s linear infinite alternate;
+          animation: pulse-shadow 2s linear infinite alternate;
+}
+.fixed-icon img {
+  width: 24px;
+  height: 24px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 @media (max-width: 1200px) and (min-width: 1000px) {

@@ -126,7 +126,7 @@
 }
 @keyframes pulse-shadow {
     100% {
-  box-shadow: 0 0 0 10px rgba(255,102,0,0), 0 0 0 20px rgba(255,102,0,0);
+  box-shadow: 0 0 0 10px rgba($color: #742C2B, $alpha: 0.1), 0 0 0 15px rgba($color: #742C2B, $alpha: 0.1);
   }
 }
 
