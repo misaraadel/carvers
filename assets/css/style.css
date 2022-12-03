@@ -1131,6 +1131,11 @@ button[type=submit] {
   transition: all 0.3s linear;
 }
 .product-box .data-apear .see-more {
+  width: 150px;
+  height: 50px;
+  border: 1px solid var(--light-color);
+  border-radius: 50px;
+  justify-content: center;
   margin-top: 10px;
   display: flex;
   align-items: center;
@@ -2380,6 +2385,34 @@ header .swiper-slide-active h1, header .swiper-slide-active p, header .swiper-sl
 .signle-blog .data-contain p:last-child {
   margin-bottom: 0px !important;
 }
+.signle-blog .socail-media {
+  width: 100%;
+  padding: 30px 10px;
+  background-color: var(--primary-color);
+  border-radius: 20px;
+  margin-top: 40px;
+  justify-content: center;
+}
+.signle-blog .socail-media span {
+  color: var(--light-color);
+  font-size: 20px;
+  font-weight: 700;
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
+}
+.signle-blog .socail-media a::after {
+  filter: var(--light-filter);
+  opacity: 0.1;
+}
+.signle-blog .socail-media a img {
+  filter: var(--light-filter);
+}
+.signle-blog .socail-media a:hover::after {
+  opacity: 1;
+}
+.signle-blog .socail-media a:hover img {
+  filter: var(--primary-filter) !important;
+}
 
 .grainte-product .box {
   width: 100%;
@@ -2789,5 +2822,8 @@ footer .coprights .techno-logo:hover img {
   }
   .about-us .about-us-image {
     height: 300px !important;
+  }
+  .signle-blog .socail-media span {
+    font-size: 15px !important;
   }
 }/*# sourceMappingURL=style.css.map */

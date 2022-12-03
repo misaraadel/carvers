@@ -139,6 +139,11 @@
     }
 
     .see-more {
+      width: 150px;
+      height: 50px;
+      border: 1px solid var(--light-color);
+      border-radius: 50px;
+      justify-content: center;
       margin-top: 10px;
       display: flex;
       align-items: center;
@@ -1576,6 +1581,43 @@ header {
 
       &:last-child {
         margin-bottom: 0px !important;
+      }
+    }
+  }
+
+  .socail-media {
+    width: 100%;
+    padding: 30px 10px;
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    margin-top: 40px;
+    justify-content: center;
+
+    span {
+      color: var(--light-color);
+      font-size: 20px;
+      font-weight: 700;
+      margin-inline-end: 10px;
+    }
+
+    a {
+      &::after {
+        filter: var(--light-filter);
+        opacity: .10;
+      }
+
+      img {
+        filter: var(--light-filter);
+      }
+
+      &:hover {
+        &::after {
+          opacity: 1;
+        }
+
+        img {
+          filter: var(--primary-filter) !important;
+        }
       }
     }
   }
